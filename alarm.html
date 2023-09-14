@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="alarm.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Modern Alarm Clock</h1>
+            <div class="mode-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span id="mode-label">Dark Mode</span>
+            </div>
+        </div>
+        <div class="alarm">
+            <input type="time" id="alarm-time">
+            <button id="set-alarm">Set Alarm</button>
+        </div>
+        <div class="alarm-status">
+            <p id="alarm-status-text"></p>
+            <button id="dismiss-alarm" style="display: none;">Dismiss</button>
+            <button id="snooze-alarm" style="display: none;">Snooze</button>
+        </div>
+    </div>
+    <audio id="alarm-sound" src="alarm.mp3" loop></audio>
+    <script src="alarm.js"></script>
+</body>
+</html>
